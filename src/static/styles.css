@@ -142,3 +142,69 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 12px;
+}
+
+.participants-section p {
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+.participants-list {
+  list-style: none; /* hide bullets */
+  padding: 8px;
+  margin: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+  border: 1px solid #e6eef8;
+  border-radius: 6px;
+  max-height: 140px;
+  overflow-y: auto;
+}
+
+.participants-list .participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 4px;
+  border-bottom: 1px dashed rgba(0,0,0,0.04);
+  font-size: 14px;
+  color: #444;
+}
+
+.participants-list .participant-item:last-child {
+  border-bottom: none;
+}
+
+.participants-list .no-participants {
+  color: #777;
+  font-style: italic;
+  padding: 6px 4px;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: background-color 0.12s ease;
+}
+
+.remove-btn:hover,
+.remove-btn:focus {
+  background-color: rgba(198,40,40,0.08);
+}
+
+/* Small responsive tweak */
+@media (max-width: 480px) {
+  .participants-list {
+    max-height: 100px;
+  }
+}
